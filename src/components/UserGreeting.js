@@ -39,6 +39,15 @@ class UserGreeting extends Component {
 
   //     return <div>{message}</div>;
   //   }
+
+  //Approach 3
+  render() {
+    return this.state.isLoggedIn ? (
+      <div>Welcome Aashish</div>
+    ) : (
+      <div>Welcome Guest</div>
+    );
+  }
 }
 
 export default UserGreeting;
@@ -48,3 +57,4 @@ export default UserGreeting;
 
 //Approach 1: if else condition
 //Approach 2: Elements i.e use variables
+//Approach 3: Using Conditional Op i.e ternary op
