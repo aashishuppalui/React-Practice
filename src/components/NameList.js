@@ -41,3 +41,8 @@ export default NameList;
 // keys give the elements a stable identity.
 // it help React identify which items have chnaged, are addedd, or are removed.
 // helps in efficient update of the user interface.
+
+//When to use index as key?
+// The items in yourlist don't have a unique id
+// the list is a static list and will not change.
+// The list will never be reordered or filtered
