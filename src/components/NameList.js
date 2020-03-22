@@ -29,8 +29,15 @@ function NameList() {
       skill: "HTML"
     }
   ];
-  const personList = persons.map(person => <Person person={person} />);
+  const personList = persons.map(person => (
+    <Person key={person.id} person={person} />
+  ));
   return <div>{personList}</div>;
 }
 
 export default NameList;
+
+// A key is a special aatribute you need to include when creating list of elements.
+// keys give the elements a stable identity.
+// it help React identify which items have chnaged, are addedd, or are removed.
+// helps in efficient update of the user interface.
